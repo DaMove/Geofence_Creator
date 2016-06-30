@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@android:color/holo_blue_dark"
+              android:layout_height="match_parent"
+              android:id="@+id/linearContainer"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGeofenceName"
+        android:hint="Enter Geofence Label"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGeofenceMessage"
+        android:hint="Enter Geofence Notification Message"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Geofence"
+        android:id="@+id/btnCreateGeofence"
+        android:onClick="createGeofenceDialogBtnHandler"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
